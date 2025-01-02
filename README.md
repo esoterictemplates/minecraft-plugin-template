@@ -1,5 +1,7 @@
 # Template Kotlin Repository
 
+<sup>Forked from [Template Kotlin Repository](https://github.com/esoterictemplates/template-kotlin-repository)</sup>
+
 [![Project Status: Maintained](./.assets/images/badges/status/maintained.svg)](./) [![Repository Size](https://img.shields.io/github/repo-size/esoterictemplates/template-kotlin-repository?style=for-the-badge&logo=git&label=Repository%20size)](./)
 
 This repository serves as a general-purpose template for generating new Kotlin projects.
