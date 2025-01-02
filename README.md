@@ -40,6 +40,12 @@ The following serves as a checklist - a list of tasks to complete when creating 
 - [ ] Clear the [ideas](./IDEAS.md) file.
 - [ ] Update the information in the [citation](./CITATION.cff) file.
 - [ ] If you are using a different system to track features, ideas, and/or issues, delete those files respectively.
+- [ ] Rename the [main class](./app/src/main/kotlin/dev/enderman/template/App.kt) if needed.
+- [ ] Rename the [main test](./app/src/test/kotlin/dev/enderman/template/AppTest.kt) if needed.
+- [ ] Update the app name in [settings.gradle.kts](./settings.gradle.kts).
+- [ ] Update the group and package names.
+- [ ] Update the main class in [build.gradle.kts](./app/build.gradle.kts).
+- [ ] Update the information in the [run configuration](./.idea/runConfigurations/Hotswap.xml).
 - [ ] Delete [this file](./README.md) and rename [README_TEMPLATE.md](./README_TEMPLATE.md) to `README.md`.
 - [ ] Commit your changes to version control if applicable.
 
