@@ -38,3 +38,6 @@ build
 # Gradle wrapper - use global Gradle instance instead
 gradlew
 gradlew.bat
+
+# VSCode binary files
+app/bin
