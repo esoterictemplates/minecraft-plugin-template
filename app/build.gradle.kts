@@ -27,7 +27,7 @@ java {
 }
 
 application {
-    mainClass = "org.example.AppKt"
+    mainClass = "dev.enderman.template.AppKt"
 }
 
 tasks {
