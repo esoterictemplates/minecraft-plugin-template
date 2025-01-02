@@ -34,3 +34,7 @@ build
 
 # Kotlin compiler output
 .kotlin/sessions/kotlin-compiler-*.salive
+
+# Gradle wrapper - use global Gradle instance instead
+gradlew
+gradlew.bat

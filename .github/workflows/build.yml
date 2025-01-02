@@ -21,9 +21,5 @@ jobs:
           distribution: 'temurin'
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
-      - name: Make gradlew executable
-        run: chmod +x ./gradlew
-      - name: Generate Gradle wrapper
-        run: gradle wrapper
       - name: Build
-        run: ./gradlew build
+        run: gradle build
