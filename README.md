@@ -87,4 +87,4 @@ You should have received a copy of the [GNU General Public License](./LICENSE) a
 
 ## Topics
 
-template templates template-project template-repository template-generic-repo kotlin
+template templates template-project template-repository template-generic-repo kotlin kotlin-template
