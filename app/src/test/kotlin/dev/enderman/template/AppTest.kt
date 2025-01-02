@@ -1,4 +1,4 @@
-package org.example
+package dev.enderman.template
 
 import kotlin.test.Test
 import kotlin.test.assertNotNull

@@ -1,4 +1,4 @@
-package org.example
+package dev.enderman.template
 
 class App {
     val greeting: String
@@ -8,5 +8,6 @@ class App {
 }
 
 fun main() {
-    println(App().greeting)
+    println(
+        App().greeting)
 }
