@@ -23,6 +23,7 @@ keywords:
   - generate
   - generator
   - github
+  - kotlin
 license: GPL-3.0
 commit: d198a52018b3ba956d6aa7daf206c16467a3e14f
 version: 1.0.0
