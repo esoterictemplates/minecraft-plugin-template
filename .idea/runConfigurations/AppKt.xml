@@ -2,7 +2,7 @@
   <configuration default="false" name="AppKt" type="JetRunConfigurationType" nameIsGenerated="true">
     <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/jbr_jcef-21.0.5-linux-x64-b631.28" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-    <option name="MAIN_CLASS_NAME" value="org.example.AppKt" />
+    <option name="MAIN_CLASS_NAME" value="dev.enderman.template.AppKt" />
     <module name="template-kotlin-repository.app.main" />
     <shortenClasspath name="NONE" />
     <option name="VM_PARAMETERS" value="-XX:+AllowEnhancedClassRedefinition -XX:HotswapAgent=core" />
