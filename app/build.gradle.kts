@@ -30,6 +30,14 @@ application {
     mainClass = "org.example.AppKt"
 }
 
-tasks.named<Test>("test") {
-    useJUnitPlatform()
+tasks {
+    jar {
+        manifest {
+            attributes["Main-Class"] = application.mainClass.get()
+        }
+    }
+
+    named<Test>("test") {
+        useJUnitPlatform()
+    }
 }
