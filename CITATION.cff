@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: Template Repository
+title: Template Kotlin Repository
 message: If you need to cite this repository, please do it as specified in this file.
 type: software
 authors:
@@ -10,13 +10,13 @@ authors:
     orcid: 'https://orcid.org/0009-0007-4990-9556'
 identifiers:
   - type: url
-    value: 'https://github.com/esoterictemplates/template-repository'
+    value: 'https://github.com/esoterictemplates/template-kotlin-repository'
     description: The link to the GitHub repository.
-repository-code: 'https://github.com/esoterictemplates/template-repository'
-url: https://github.com/esoterictemplates/template-repository?tab=readme-ov-file
-repository-artifact: 'https://github.com/esoterictemplates/template-repository/releases'
+repository-code: 'https://github.com/esoterictemplates/template-kotlin-repository'
+url: https://github.com/esoterictemplates/template-kotlin-repository?tab=readme-ov-file
+repository-artifact: 'https://github.com/esoterictemplates/template-kotlin-repository/releases'
 abstract: >
-  This repository serves as a general-purpose template for generating new GitHub repositories.
+  This repository serves as a general-purpose template for generating new Kotlin GitHub repositories.
 keywords:
   - template
   - repository
@@ -25,5 +25,5 @@ keywords:
   - github
 license: GPL-3.0
 commit: d198a52018b3ba956d6aa7daf206c16467a3e14f
-version: 2.0.1
+version: 1.0.0
 date-released: '2025-01-02'

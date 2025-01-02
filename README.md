@@ -1,8 +1,8 @@
-# Template Repository
+# Template Kotlin Repository
 
 [![Project Status: Maintained](./.assets/images/badges/status/maintained.svg)](./) [![Repository Size](https://img.shields.io/github/repo-size/esoterictemplates/template-repository?style=for-the-badge&logo=git&label=Repository%20size)](./)
 
-This repository serves as a general-purpose template for generating new projects.
+This repository serves as a general-purpose template for generating new Kotlin projects.
 
 ## Usage
 
