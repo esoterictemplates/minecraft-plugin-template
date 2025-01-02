@@ -41,3 +41,11 @@ This file documents all of the features of this project.
 ### [IntelliJ IDEA .gitignore](../.idea/.gitignore)
 
 - Ignores certain files when opening with IntelliJ IDEA and possibly other IDEs too.
+
+## Full Kotlin Setup With Gradle
+
+- Fully configured Kotlin project setup using Gradle.
+
+## [Hot-Swapping Configuration](../.idea/runConfigurations/Hotswap.xml)
+
+- Allows you to reload classes without having to fully rerun your code.
