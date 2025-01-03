@@ -14,6 +14,12 @@
 
 ## Log
 
+### 1.1.1
+
+#### Fixes
+
+- Fixed the credit link.
+
 ### 1.1.0
 
 #### Additions
