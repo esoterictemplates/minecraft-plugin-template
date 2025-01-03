@@ -1,6 +1,6 @@
 # Project Name
 
-<sup>Generated from [Template Kotlin Repository](https://github.com/esoterictemplates/template-kotlin-repository) [1.0.0](https://github.com/esoterictemplates/template-kotlin-repository/tree/1.0.0)</sup>
+<sup>Generated from [Template Kotlin Repository](https://github.com/esoterictemplates/template-kotlin-repository) [1.1.0](https://github.com/esoterictemplates/template-kotlin-repository/tree/1.1.0)</sup>
 
 [![Project Status: Unfinished](./.assets/images/badges/status/unfinished.svg)](./) [![Repository Size](https://img.shields.io/github/repo-size/author/project?style=for-the-badge&logo=git&label=Repository%20size)](./)
 
