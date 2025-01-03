@@ -56,7 +56,7 @@ You should have received a copy of the [GNU General Public License](./LICENSE) a
 
 ## Credit
 
-- [Template Repository](https://github.com/esoterictemplates/template-repository) Copyright (C) 2024-2025 [Esoteric Enderman](https://enderman.dev) licensed under [GPL-3.0](./LICENSE).
+- [Template Kotlin Repository](https://github.com/esoterictemplates/template-kotlin-repository) Copyright (C) 2024-2025 [Esoteric Enderman](https://enderman.dev) licensed under [GPL-3.0](./LICENSE).
 
 ## Topics
 
