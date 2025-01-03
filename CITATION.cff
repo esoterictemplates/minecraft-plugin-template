@@ -16,7 +16,7 @@ repository-code: 'https://github.com/esoterictemplates/template-kotlin-repositor
 url: https://github.com/esoterictemplates/template-kotlin-repository?tab=readme-ov-file
 repository-artifact: 'https://github.com/esoterictemplates/template-kotlin-repository/releases'
 abstract: >
-  This repository serves as a general-purpose template for generating new Kotlin GitHub repositories.
+  This repository serves as a general-purpose template for generating new Kotlin projects.
 keywords:
   - template
   - repository

@@ -14,6 +14,16 @@
 
 ## Log
 
+### 1.1.0
+
+#### Additions
+
+- Added `kotlin` topic.
+
+#### Changes
+
+- Updated upstream.
+
 ### 1.0.0
 
 #### Additions
