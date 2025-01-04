@@ -6,4 +6,6 @@ This file is used to track ideas and planned features for this project. Implemen
 
 ## Considered
 
+- Add GitLab CI/CD configuration?
+
 ## Won't Implement
