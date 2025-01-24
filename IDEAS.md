@@ -8,5 +8,6 @@ This file is used to track ideas and planned features for this project. Implemen
 
 - Add GitLab CI/CD configuration?
 - Add Jitpack configuration ([jitpack.yml file](./jitpack.yml))!
+- Create a GitHub workflow that builds and publishes a release when a new tag is pushed.
 
 ## Won't Implement
