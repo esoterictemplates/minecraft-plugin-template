@@ -11,6 +11,8 @@ plugins {
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
+
+    maven("https://jitpack.io")
 }
 
 dependencies {
@@ -19,6 +21,8 @@ dependencies {
     testImplementation(libs.junit.jupiter.engine)
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+    implementation("com.github.esotericfoundation:utility.kt:1.1.1")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
