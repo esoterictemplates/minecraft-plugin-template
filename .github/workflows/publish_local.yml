@@ -1,4 +1,4 @@
-name: Build
+name: Publish (Locally)
 
 on:
   push:
