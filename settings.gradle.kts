@@ -4,4 +4,3 @@ plugins {
 }
 
 rootProject.name = "template-kotlin-repository"
-include("app")
