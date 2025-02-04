@@ -47,7 +47,7 @@ java {
 }
 
 application {
-    mainClass = "dev.enderman.template.AppKt"
+    mainClass = "${group}.template.AppKt"
 }
 
 tasks {
