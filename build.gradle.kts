@@ -1,15 +1,12 @@
 plugins {
-    // Apply the application plugin to add support for building a CLI application in Java.
-    application
+    application // Adds support for building a CLI application.
 
-    // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
     alias(libs.plugins.kotlin.jvm)
 
     alias(libs.plugins.shadow)
 }
 
 repositories {
-    // Use Maven Central for resolving dependencies.
     mavenCentral()
 
     maven("https://jitpack.io")
