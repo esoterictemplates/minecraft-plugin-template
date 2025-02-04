@@ -33,7 +33,7 @@ dist
 build
 
 # Kotlin compiler output
-.kotlin/sessions/kotlin-compiler-*.salive
+.kotlin/sessions/kotlin-compiler-[0-9]*.salive
 
 # Gradle wrapper - use global Gradle instance instead
 gradlew
