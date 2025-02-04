@@ -1,11 +1,11 @@
 plugins {
+    // Apply the application plugin to add support for building a CLI application in Java.
+    application
+
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
     alias(libs.plugins.kotlin.jvm)
 
     alias(libs.plugins.shadow)
-
-    // Apply the application plugin to add support for building a CLI application in Java.
-    application
 }
 
 repositories {
@@ -16,13 +16,11 @@ repositories {
 }
 
 dependencies {
-    testImplementation(libs.junit.jetbrains)
-
-    testImplementation(libs.junit.jupiter.engine)
+    implementation(libs.utility)
 
     testRuntimeOnly(libs.junit.platform)
-
-    implementation(libs.utility)
+    testImplementation(libs.junit.jupiter.engine)
+    testImplementation(libs.junit.jetbrains)
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
