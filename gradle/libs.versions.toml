@@ -8,11 +8,11 @@ junit-platform = "junit-platform-launcher"
 junit-jupiter-engine = "5.11.1"
 
 # Plugins
-kotlin-jvm-plugin = "2.0.21"
+plugin-kotlin-jvm = "2.0.21"
 
-shadow-plugin = "9.0.0-beta6"
+plugin-shadow = "9.0.0-beta6"
 
-dokka-plugin = "2.0.0"
+plugin-dokka = "2.0.0"
 
 [libraries]
 # Utility
@@ -24,8 +24,8 @@ junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", vers
 junit-jetbrains = { module = "org.jetbrains.kotlin:kotlin-test-junit5" }
 
 [plugins]
-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-jvm-plugin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "plugin-kotlin-jvm" }
 
-shadow = { id = "com.gradleup.shadow", version.ref = "shadow-plugin" }
+shadow = { id = "com.gradleup.shadow", version.ref = "plugin-shadow" }
 
-dokka = { id = "org.jetbrains.dokka", version.ref = "dokka-plugin" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "plugin-dokka" }
