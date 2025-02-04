@@ -4,8 +4,7 @@ utility = "1.1.1"
 junit-platform = "junit-platform-launcher"
 junit-jupiter-engine = "5.11.1"
 
-# Plugins
-shadow = "9.0.0-beta6"
+shadow-plugin = "9.0.0-beta6"
 
 [libraries]
 utility = { module = "com.github.esotericfoundation:utility.kt", version.ref = "utility" }
@@ -17,4 +16,4 @@ junit-jetbrains = { module = "org.jetbrains.kotlin:kotlin-test-junit5" }
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.0.21" }
 
-shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow-plugin" }
