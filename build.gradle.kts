@@ -20,6 +20,8 @@ dependencies {
     testImplementation(libs.junit.jetbrains)
 }
 
+version = "1.1.1"
+
 // Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {
