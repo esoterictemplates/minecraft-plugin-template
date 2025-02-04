@@ -12,6 +12,8 @@ kotlin-jvm-plugin = "2.0.21"
 
 shadow-plugin = "9.0.0-beta6"
 
+dokka-plugin = "2.0.0"
+
 [libraries]
 # Utility
 utility = { module = "com.github.esotericfoundation:utility.kt", version.ref = "utility" }
@@ -25,3 +27,5 @@ junit-jetbrains = { module = "org.jetbrains.kotlin:kotlin-test-junit5" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-jvm-plugin" }
 
 shadow = { id = "com.gradleup.shadow", version.ref = "shadow-plugin" }
+
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka-plugin" }
