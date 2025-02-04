@@ -4,6 +4,8 @@ utility = "1.1.1"
 junit-platform = "junit-platform-launcher"
 junit-jupiter-engine = "5.11.1"
 
+kotlin-jvm-plugin = "2.0.21"
+
 shadow-plugin = "9.0.0-beta6"
 
 [libraries]
@@ -14,6 +16,6 @@ junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", vers
 junit-jetbrains = { module = "org.jetbrains.kotlin:kotlin-test-junit5" }
 
 [plugins]
-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version = "2.0.21" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-jvm-plugin" }
 
 shadow = { id = "com.gradleup.shadow", version.ref = "shadow-plugin" }
