@@ -32,7 +32,6 @@ java {
     }
 
     withSourcesJar()
-    withJavadocJar()
 }
 
 application {
