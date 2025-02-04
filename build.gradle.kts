@@ -39,7 +39,7 @@ application {
 tasks {
     jar {
         manifest {
-            attributes["Main-Class"] = application.mainClass.get()
+            attributes["Main-Class"] = application.mainClass
         }
     }
 
