@@ -6,7 +6,7 @@ on:
   pull_request:
 
 jobs:
-  publish_local:
+  local:
     runs-on: ubuntu-latest
     strategy:
       matrix:
