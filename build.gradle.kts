@@ -1,6 +1,8 @@
 plugins {
     application // Adds support for building a CLI application.
 
+    `maven-publish`
+
     alias(libs.plugins.kotlin.jvm)
 
     alias(libs.plugins.shadow)
@@ -21,6 +23,7 @@ dependencies {
 }
 
 version = "1.1.1"
+group = "dev.enderman"
 
 // Apply a specific Java toolchain to ease working on different environments.
 java {
@@ -42,5 +45,16 @@ tasks {
 
     test {
         useJUnitPlatform()
+    }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("mavenJava") {
+            from(components["java"])
+            groupId = group.toString()
+            artifactId = rootProject.name
+            version = version.toString()
+        }
     }
 }
