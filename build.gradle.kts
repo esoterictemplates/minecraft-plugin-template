@@ -2,6 +2,7 @@ import org.jetbrains.dokka.base.DokkaBase
 import org.jetbrains.dokka.base.DokkaBaseConfiguration
 import org.jetbrains.dokka.gradle.DokkaTask
 import java.util.Calendar
+import java.util.jar.Attributes
 
 buildscript {
     dependencies {
@@ -54,7 +55,7 @@ application {
 tasks {
     jar {
         manifest {
-            attributes["Main-Class"] = application.mainClass
+            attributes[Attributes.Name.MAIN_CLASS.toString()] = application.mainClass
         }
     }
 
