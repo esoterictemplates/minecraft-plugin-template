@@ -10,6 +10,8 @@ This file is used to track ideas and planned features for this project. Implemen
 - Create a GitHub workflow that builds and publishes a release when a new tag is pushed.
 - Add a publishing configuration. And in general update [build.gradle.kts](./app/build.gradle.kts).
 - Configure a display name in [settings.gradle.kts](./settings.gradle.kts)?
+- Create a GitHub workflow that publishes to Maven Central.
+- Create a GitHub workflow that publishes to GitHub packages.
 
 ## Won't Implement
 
