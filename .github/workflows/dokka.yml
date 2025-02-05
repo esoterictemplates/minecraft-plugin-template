@@ -41,31 +41,16 @@ jobs:
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
-          # Check if gh-pages exists remotely, otherwise create it
-          if ! git ls-remote --exit-code --heads origin gh-pages; then
-            git checkout --orphan gh-pages
-            git rm -rf .
-            touch README.md
-            echo "# GitHub Pages" > README.md
-            git add README.md
-            git commit -m "Initial commit for GitHub Pages"
-            git push origin gh-pages
-            git checkout main  # Return to main branch before adding worktree
-          fi
+          git checkout --orphan gh-pages
 
-          # Ensure the worktree does not already exist
-          rm -rf gh-pages-dir
-          
-          # Add gh-pages as a worktree
-          git worktree add gh-pages-dir origin/gh-pages
+          shopt -s dotglob extglob
+          rm -rf !(build|.git)
+          shopt -u dotglob extglob
 
-          # Ensure it's clean
-          rm -rf gh-pages-dir/*
-          cp -r build/dokka/html/* gh-pages-dir/
-          touch gh-pages-dir/.nojekyll  # Ensure GitHub Pages serves files correctly
+          mv ./build/dokka/html/* ./
+          rm -rf build
 
-          # Commit and push changes
-          cd gh-pages-dir
-          git add .
-          git commit -m "[ci skip] Update Dokka documentation" || exit 0
-          git push origin gh-pages
+          git add ./
+          git commit -m "GitHub Pages updates"
+
+          git push --force -u origin gh-pages
