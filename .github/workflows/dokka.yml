@@ -35,9 +35,6 @@ jobs:
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         run: |
-      - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/main'
-        run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
