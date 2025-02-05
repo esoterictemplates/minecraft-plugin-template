@@ -64,6 +64,7 @@ tasks {
     withType<DokkaTask>().configureEach {
         pluginConfiguration<DokkaBase, DokkaBaseConfiguration> {
             footerMessage = "© 2025 Esoteric Enderman"
+            homepageLink = "https://github.com/esoterictemplates/template-kotlin-repository"
         }
     }
 }
