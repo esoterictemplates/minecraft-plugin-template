@@ -1,6 +1,6 @@
 import org.jetbrains.dokka.base.DokkaBase
-import org.jetbrains.dokka.gradle.DokkaTask
 import org.jetbrains.dokka.base.DokkaBaseConfiguration
+import org.jetbrains.dokka.gradle.DokkaTask
 
 buildscript {
     dependencies {
