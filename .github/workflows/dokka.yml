@@ -24,13 +24,13 @@ jobs:
           distribution: 'temurin'
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
-      - name: HTML
+      - name: Generate Dokka HTML files
         run: gradle dokkaHtml
-      - name: Jekyll
+      - name: Generate Dokka Jekyll files
         run: gradle dokkaJekyll
-      - name: Javadoc
+      - name: Generate Dokka Javadoc files
         run: gradle dokkaJavadoc
-      - name: GFM
+      - name: Generate Dokka GFM files
         run: gradle dokkaGfm
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
