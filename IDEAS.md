@@ -10,7 +10,6 @@ This file is used to track ideas and planned features for this project. Implemen
 - Add Jitpack configuration ([jitpack.yml file](./jitpack.yml))!
 - Create a GitHub workflow that builds and publishes a release when a new tag is pushed.
 - Add a publishing configuration. And in general update [build.gradle.kts](./app/build.gradle.kts).
-- Use [libs.versions.toml](./gradle/libs.versions.toml) for all dependencies and plugins.
 - Configure a display name in [settings.gradle.kts](./settings.gradle.kts)?
 
 ## Won't Implement
