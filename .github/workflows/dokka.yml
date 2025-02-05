@@ -35,10 +35,13 @@ jobs:
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         run: |
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        run: |
           git config --global user.name "GitHub Actions"
           git config --global user.email "actions@github.com"
 
-          # Check if gh-pages branch exists remotely
+          # Check if gh-pages exists remotely, otherwise create it
           if ! git ls-remote --exit-code --heads origin gh-pages; then
             git checkout --orphan gh-pages
             git rm -rf .
@@ -47,10 +50,14 @@ jobs:
             git add README.md
             git commit -m "Initial commit for GitHub Pages"
             git push origin gh-pages
+            git checkout main  # Return to main branch before adding worktree
           fi
 
-          # Use a separate directory for the gh-pages worktree
-          git worktree add gh-pages-dir gh-pages
+          # Ensure the worktree does not already exist
+          rm -rf gh-pages-dir
+          
+          # Add gh-pages as a worktree
+          git worktree add gh-pages-dir origin/gh-pages
 
           # Ensure it's clean
           rm -rf gh-pages-dir/*
