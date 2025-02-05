@@ -1,4 +1,4 @@
-name: Dokka Documentation
+name: dokka
 
 on:
   push:
