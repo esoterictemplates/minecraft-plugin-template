@@ -1,6 +1,7 @@
 import org.jetbrains.dokka.base.DokkaBase
 import org.jetbrains.dokka.base.DokkaBaseConfiguration
 import org.jetbrains.dokka.gradle.DokkaTask
+import java.util.Calendar
 
 buildscript {
     dependencies {
@@ -63,7 +64,7 @@ tasks {
 
     withType<DokkaTask>().configureEach {
         pluginConfiguration<DokkaBase, DokkaBaseConfiguration> {
-            footerMessage = "© 2025 Esoteric Enderman"
+            footerMessage = "© ${Calendar.getInstance().get(Calendar.YEAR)} Esoteric Enderman"
             homepageLink = "https://github.com/esoterictemplates/template-kotlin-repository"
         }
     }
