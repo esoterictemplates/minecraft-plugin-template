@@ -19,6 +19,9 @@ plugins {
 
     alias(libs.plugins.paperweight)
 
+    alias(libs.plugins.bukkit.convention)
+    alias(libs.plugins.paper.run)
+
     alias(libs.plugins.shadow)
 
     alias(libs.plugins.dokka)
