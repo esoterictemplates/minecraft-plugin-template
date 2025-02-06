@@ -17,6 +17,8 @@ plugins {
 
     alias(libs.plugins.kotlin.jvm)
 
+    alias(libs.plugins.paperweight)
+
     alias(libs.plugins.shadow)
 
     alias(libs.plugins.dokka)
@@ -29,6 +31,8 @@ repositories {
 }
 
 dependencies {
+    paperweight.paperDevBundle("1.21.4-R0.1-SNAPSHOT")
+
     implementation(libs.utility)
 
     testRuntimeOnly(libs.junit.platform)
