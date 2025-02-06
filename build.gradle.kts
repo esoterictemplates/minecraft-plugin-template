@@ -1,6 +1,3 @@
-import org.jetbrains.dokka.base.DokkaBase
-import org.jetbrains.dokka.base.DokkaBaseConfiguration
-import org.jetbrains.dokka.gradle.DokkaTask
 import java.util.Calendar
 import java.util.jar.Attributes
 
@@ -62,13 +59,6 @@ tasks {
     test {
         useJUnitPlatform()
     }
-
-    withType<DokkaTask>().configureEach {
-        pluginConfiguration<DokkaBase, DokkaBaseConfiguration> {
-            footerMessage = "© ${Calendar.getInstance().get(Calendar.YEAR)} Esoteric Enderman"
-            homepageLink = "https://github.com/esoterictemplates/template-kotlin-repository"
-        }
-    }
 }
 
 publishing {
@@ -79,5 +69,21 @@ publishing {
             artifactId = rootProject.name
             version = version.toString()
         }
+    }
+}
+
+dokka {
+    moduleName.set("Kotlin Template")
+
+    dokkaSourceSets.main {
+        sourceLink {
+            localDirectory.set(file("src/main/kotlin"))
+
+            remoteUrl("https://github.com/esoterictemplates/template-kotlin-repository/${version}/main/src/main/kotlin")
+        }
+    }
+
+    pluginsConfiguration.html {
+        footerMessage.set("© ${Calendar.getInstance().get(Calendar.YEAR)} Esoteric Enderman")
     }
 }
