@@ -1,5 +1,7 @@
 package dev.enderman.minecraft.plugins.template
 
-class TemplatePlugin {
+import org.bukkit.plugin.java.JavaPlugin
+
+class TemplatePlugin : JavaPlugin() {
 
 }
