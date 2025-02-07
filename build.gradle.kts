@@ -11,8 +11,6 @@ buildscript {
 }
 
 plugins {
-    application // Adds support for building a CLI application.
-
     `maven-publish`
 
     alias(libs.plugins.kotlin.jvm)
@@ -55,17 +53,7 @@ java {
     withSourcesJar()
 }
 
-application {
-    mainClass = "${group}.template.AppKt"
-}
-
 tasks {
-    jar {
-        manifest {
-            attributes[Attributes.Name.MAIN_CLASS.toString()] = application.mainClass
-        }
-    }
-
     test {
         useJUnitPlatform()
     }
