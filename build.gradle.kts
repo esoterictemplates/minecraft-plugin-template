@@ -1,3 +1,4 @@
+import xyz.jpenilla.resourcefactory.bukkit.BukkitPluginYaml
 import org.jetbrains.dokka.base.DokkaBase
 import org.jetbrains.dokka.base.DokkaBaseConfiguration
 import org.jetbrains.dokka.gradle.DokkaTask
@@ -41,8 +42,24 @@ dependencies {
     testImplementation(libs.junit.jetbrains)
 }
 
+description = "A template."
+
 version = "1.1.1"
 group = "dev.enderman"
+
+bukkitPluginYaml {
+  name = "Template"
+  description = project.description
+
+  authors = listOfNotNull("Esoteric Foundation", "Esoteric Enderman")
+
+  setVersion(project.version)
+
+  apiVersion = "1.21.4"
+  main = "${project.group}.minecraft.plugins.template.TemplatePlugin"
+
+  load = BukkitPluginYaml.PluginLoadOrder.STARTUP
+}
 
 // Apply a specific Java toolchain to ease working on different environments.
 java {
