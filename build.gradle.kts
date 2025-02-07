@@ -61,7 +61,7 @@ tasks {
     withType<DokkaTask>().configureEach {
         pluginConfiguration<DokkaBase, DokkaBaseConfiguration> {
             footerMessage = "© ${Calendar.getInstance().get(Calendar.YEAR)} Esoteric Enderman"
-            homepageLink = "https://github.com/esoterictemplates/template-kotlin-repository"
+            homepageLink = "https://github.com/esoterictemplates/template-minecraft-plugin"
         }
     }
 }
