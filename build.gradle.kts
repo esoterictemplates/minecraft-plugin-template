@@ -43,7 +43,7 @@ java {
 }
 
 application {
-    mainClass = "${group}.template.AppKt"
+    mainClass = "${group}.template.MainKt"
 }
 
 tasks {
