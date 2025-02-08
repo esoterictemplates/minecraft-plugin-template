@@ -14,6 +14,8 @@ plugins {
 
     alias(libs.plugins.shadow)
 
+    jacoco
+
     `maven-publish`
 
     alias(libs.plugins.dokka)
@@ -55,6 +57,18 @@ tasks {
 
     test {
         useJUnitPlatform()
+    }
+
+    jacocoTestCoverageVerification {
+        dependsOn(test)
+
+        violationRules {
+            rule {
+                limit {
+                    minimum = "1.0".toBigDecimal()
+                }
+            }
+        }
     }
 }
 
