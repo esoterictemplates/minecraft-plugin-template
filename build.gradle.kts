@@ -10,11 +10,11 @@ buildscript {
 plugins {
     application // Adds support for building a CLI application.
 
-    `maven-publish`
-
     alias(libs.plugins.kotlin.jvm)
 
     alias(libs.plugins.shadow)
+
+    `maven-publish`
 
     alias(libs.plugins.dokka)
 }
