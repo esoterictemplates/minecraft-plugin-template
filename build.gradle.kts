@@ -62,6 +62,10 @@ bukkitPluginYaml {
   load = BukkitPluginYaml.PluginLoadOrder.STARTUP
 }
 
+paperweight {
+    addServerDependencyTo = configurations.named(JavaPlugin.COMPILE_ONLY_CONFIGURATION_NAME).map { setOf(it) }
+}
+
 // Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {
