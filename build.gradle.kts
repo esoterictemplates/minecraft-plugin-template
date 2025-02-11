@@ -1,4 +1,4 @@
-import xyz.jpenilla.resourcefactory.bukkit.BukkitPluginYaml
+import xyz.jpenilla.resourcefactory.paper.paperPluginYaml
 import xyz.jpenilla.runtask.task.AbstractRun
 import org.jetbrains.dokka.base.DokkaBase
 import org.jetbrains.dokka.base.DokkaBaseConfiguration
@@ -33,6 +33,8 @@ repositories {
 }
 
 dependencies {
+    implementation(kotlin("stdlib-jdk8"))
+
     paperweight.paperDevBundle("1.21.4-R0.1-SNAPSHOT")
 
     implementation(libs.utility)
@@ -49,7 +51,7 @@ description = "A template."
 version = "1.1.1"
 group = "dev.enderman"
 
-bukkitPluginYaml {
+val yaml = paperPluginYaml {
   name = "Template"
   description = project.description
 
@@ -58,9 +60,13 @@ bukkitPluginYaml {
   setVersion(project.version)
 
   apiVersion = "1.21.4"
-  main = "${project.group}.minecraft.plugins.template.TemplatePlugin"
 
-  load = BukkitPluginYaml.PluginLoadOrder.STARTUP
+  main = "${project.group}.minecraft.plugins.template.TemplatePlugin"
+  bootstrapper = "${project.group}.minecraft.plugins.template.bootstrap.TemplatePluginBootstrap"
+}
+
+bukkitPluginYaml {
+    main = yaml.main
 }
 
 paperweight {
