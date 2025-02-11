@@ -5,6 +5,6 @@ import org.bukkit.plugin.java.JavaPlugin
 open class TemplatePlugin : JavaPlugin() {
 
     override fun onEnable() {
-        logger.info("Enabling plugin...")
+
     }
 }
