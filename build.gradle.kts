@@ -1,4 +1,5 @@
 import xyz.jpenilla.resourcefactory.bukkit.BukkitPluginYaml
+import xyz.jpenilla.runtask.task.AbstractRun
 import org.jetbrains.dokka.base.DokkaBase
 import org.jetbrains.dokka.base.DokkaBaseConfiguration
 import org.jetbrains.dokka.gradle.DokkaTask
@@ -76,6 +77,15 @@ java {
 }
 
 tasks {
+    withType<AbstractRun> {
+        javaLauncher = project.javaToolchains.launcherFor {
+            vendor = JvmVendorSpec.JETBRAINS
+            languageVersion = JavaLanguageVersion.of(21)
+        }
+
+        jvmArgs("-XX:+AllowEnhancedClassRedefinition")
+    }
+
     test {
         useJUnitPlatform()
     }
