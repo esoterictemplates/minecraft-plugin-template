@@ -39,6 +39,8 @@ dependencies {
     testRuntimeOnly(libs.junit.platform)
     testImplementation(libs.junit.jupiter.engine)
     testImplementation(libs.junit.jetbrains)
+
+    testImplementation(libs.bukkit.mock)
 }
 
 description = "A template."
