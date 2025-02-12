@@ -59,6 +59,8 @@ val yaml = paperPluginYaml {
 
   setVersion(project.version)
 
+  website = "https://github.com/esoterictemplate/template-minecraft-plugin"
+
   apiVersion = "1.21.4"
 
   main = "${project.group}.minecraft.plugins.template.TemplatePlugin"
