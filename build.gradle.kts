@@ -1,4 +1,3 @@
-import xyz.jpenilla.resourcefactory.paper.paperPluginYaml
 import xyz.jpenilla.runtask.task.AbstractRun
 import org.jetbrains.dokka.base.DokkaBase
 import org.jetbrains.dokka.base.DokkaBaseConfiguration
@@ -18,7 +17,7 @@ plugins {
 
     alias(libs.plugins.paperweight)
 
-    alias(libs.plugins.bukkit.convention)
+    alias(libs.plugins.paper.convention)
     alias(libs.plugins.paper.run)
 
     alias(libs.plugins.shadow)
@@ -51,7 +50,7 @@ description = "A template."
 version = "1.1.1"
 group = "dev.enderman"
 
-val yaml = paperPluginYaml {
+paperPluginYaml {
   name = "Template"
   description = project.description
 
@@ -65,10 +64,6 @@ val yaml = paperPluginYaml {
 
   main = "${project.group}.minecraft.plugins.template.TemplatePlugin"
   bootstrapper = "${project.group}.minecraft.plugins.template.bootstrap.TemplatePluginBootstrap"
-}
-
-bukkitPluginYaml {
-    main = yaml.main
 }
 
 paperweight {
