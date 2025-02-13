@@ -98,7 +98,7 @@ tasks {
         useJUnitPlatform()
     }
 
-    withType<DokkaTask>().configureEach {
+    withType<DokkaTask> {
         pluginConfiguration<DokkaBase, DokkaBaseConfiguration> {
             footerMessage = "© ${Calendar.getInstance().get(Calendar.YEAR)} Esoteric Enderman"
             homepageLink = "https://github.com/esoterictemplates/template-minecraft-plugin"
