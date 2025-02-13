@@ -14,7 +14,7 @@ class TemplatePluginTest {
 
     @BeforeTest fun setUp() {
         server = MockBukkit.mock()
-        plugin = MockBukkit.load(TemplatePlugin::class.java)
+        plugin = MockBukkit.loadWith(TemplatePlugin::class.java, "paper-plugin.yml")
     }
 
     @Test fun onEnableTest() {
