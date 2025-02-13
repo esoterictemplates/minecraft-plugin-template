@@ -1,3 +1,8 @@
+# Cache
+
+## Mappings cache
+*.tiny
+
 # Lock files
 ~$*
 .~lock.*#
