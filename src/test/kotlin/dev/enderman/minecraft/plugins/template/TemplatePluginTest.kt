@@ -5,6 +5,7 @@ import org.mockbukkit.mockbukkit.ServerMock
 import kotlin.test.AfterTest
 import kotlin.test.BeforeTest
 import kotlin.test.Test
+import kotlin.test.assertNotNull
 
 class TemplatePluginTest {
 
@@ -16,7 +17,10 @@ class TemplatePluginTest {
         plugin = MockBukkit.load(TemplatePlugin::class.java)
     }
 
-    @Test fun onEnableTest() {}
+    @Test fun onEnableTest() {
+        assertNotNull(server)
+        assertNotNull(plugin)
+    }
 
     @AfterTest fun tearDown() {
         MockBukkit.unmock()
