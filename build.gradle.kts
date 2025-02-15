@@ -45,11 +45,6 @@ dependencies {
     testImplementation(libs.bukkit.mock)
 }
 
-description = "A template."
-
-version = "1.1.1"
-group = "dev.enderman"
-
 paperPluginYaml {
   name = "Template"
   description = project.description
