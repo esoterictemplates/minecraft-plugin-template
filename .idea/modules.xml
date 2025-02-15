@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/minecraft-plugin-template.iml" filepath="$PROJECT_DIR$/.idea/modules/minecraft-plugin-template.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/minecraft-plugin-template.main.iml" filepath="$PROJECT_DIR$/.idea/modules/minecraft-plugin-template.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/minecraft-plugin-template.test.iml" filepath="$PROJECT_DIR$/.idea/modules/minecraft-plugin-template.test.iml" />
     </modules>
