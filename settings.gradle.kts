@@ -1,1 +1,1 @@
-rootProject.name = "template-minecraft-plugin"
+rootProject.name = "minecraft-plugin-template"

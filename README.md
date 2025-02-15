@@ -1,4 +1,4 @@
-# Template Kotlin Repository
+# Minecraft Plugin Template
 
 <sup>Forked from [Template Repository](https://github.com/esoterictemplates/template-repository)</sup>
 
