@@ -13,7 +13,7 @@ bukkit-mock = "4.33.0"
 dokka = "2.0.0"
 
 # Plugins
-plugin-kotlin-jvm = "2.0.21"
+plugin-kotlin-jvm = "2.1.0"
 
 plugin-paperweight = "2.0.0-beta.14"
 
