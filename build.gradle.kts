@@ -95,7 +95,7 @@ dokka {
             val src = property("source") as String
             val resolvedVersion = if ((version as String).endsWith("SNAPSHOT")) "main" else version
 
-            localDirectory.set(file(src))
+            localDirectory.set(File(src))
 
             remoteUrl("https://github.com/esoterictemplates/template-kotlin-repository/blob/${resolvedVersion}/${src}")
         }
