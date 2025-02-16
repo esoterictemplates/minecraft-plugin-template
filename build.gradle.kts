@@ -49,7 +49,7 @@ java {
 }
 
 application {
-    mainClass = "${group}.${project.property("package")}.MainKt"
+    mainClass = "${group}.${property("package")}.MainKt"
 }
 
 tasks {
@@ -81,7 +81,7 @@ publishing {
         create<MavenPublication>("mavenJava") {
             from(components["java"])
             groupId = group.toString()
-            artifactId = rootProject.name
+            artifactId = name
             version = version.toString()
         }
     }
