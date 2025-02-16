@@ -35,6 +35,10 @@ Project description.
 
 [Repository Name][root] &copy; \<year> [\<name of author>][author-website] is licensed under the [AGPL 3.0][license].
 
+## Topics
+
+kotlin
+
 <!-- Link aliases -->
 
 [root]: /
