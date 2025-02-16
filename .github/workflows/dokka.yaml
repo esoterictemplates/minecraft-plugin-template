@@ -60,4 +60,4 @@ jobs:
           git add ./
           git commit -m "GitHub Pages updates"
 
-          git push --force -u origin gh-pages
+          git push --force -u origin gh-pages && git push origin gh-pages
