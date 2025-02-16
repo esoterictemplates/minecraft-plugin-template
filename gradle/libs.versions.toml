@@ -15,7 +15,7 @@ plugin-kotlin-jvm = "2.0.21"
 
 plugin-release-axion = "1.14.4"
 
-plugin-shadow = "9.0.0-beta6"
+plugin-shadow = "9.0.0-beta8"
 
 plugin-dokka = "2.0.0"
 
