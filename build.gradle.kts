@@ -48,8 +48,6 @@ repositories {
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
-
     paperweight.paperDevBundle("${paperPluginYaml.apiVersion.get()}-R0.1-SNAPSHOT")
 
     implementation(libs.utility)
