@@ -97,7 +97,7 @@ dokka {
 
             localDirectory.set(File(src))
 
-            remoteUrl("https://github.com/esoterictemplates/template-kotlin-repository/blob/${resolvedVersion}/${src}")
+            remoteUrl("https://github.com/esoterictemplates/template-kotlin-repository/blob/${resolvedVersion}/project/${src}")
         }
     }
 
