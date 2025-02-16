@@ -54,7 +54,7 @@ jobs:
 
           mkdir -p ./docs/$version
 
-          mv ./build/dokka/html/* ./docs/$version
+          mv ./project/build/dokka/html/* ./docs/$version
           rm -rf build
 
           git add ./
