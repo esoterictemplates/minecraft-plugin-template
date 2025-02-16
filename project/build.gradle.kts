@@ -101,12 +101,10 @@ dokka {
 
     dokkaSourceSets.main {
         sourceLink {
-            val src = property("kotlin.directory") as String
             val remoteVersion = if ((version as String).endsWith(VersionComparatorUtil.VersionTokenType.SNAPSHOT.name)) "main" else version
 
-            localDirectory.set(File(src))
-
-            remoteUrl("${property("source.url.prefix")}${remoteVersion}/project/${src}")
+            localDirectory.set(File(property("kotlin.directory") as String))
+            remoteUrl("${property("source.url.prefix")}${remoteVersion}/${localDirectory.get().asFile.relativeTo(rootProject.rootDir)}")
         }
     }
 
