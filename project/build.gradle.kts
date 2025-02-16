@@ -96,7 +96,7 @@ publishing {
 }
 
 dokka {
-    moduleName.set("Kotlin Template")
+    moduleName = property("name.display") as String
 
     dokkaSourceSets.main {
         sourceLink {
