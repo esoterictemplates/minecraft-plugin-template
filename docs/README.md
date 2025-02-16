@@ -2,7 +2,7 @@
 
 [![Project Status: Maintained][status-badge]][root] [![Repository Size][repository-size-badge]][root]
 
-This repository serves as a general-purpose template for generating new projects.
+This repository serves as a general-purpose template for generating new Kotlin projects.
 
 ## Usage
 
