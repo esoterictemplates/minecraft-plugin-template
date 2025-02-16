@@ -1,3 +1,4 @@
+import org.jetbrains.kotlin.com.intellij.util.text.VersionComparatorUtil
 import java.util.Calendar
 import java.util.jar.Attributes
 
@@ -101,7 +102,7 @@ dokka {
     dokkaSourceSets.main {
         sourceLink {
             val src = property("kotlin.directory") as String
-            val remoteVersion = if ((version as String).endsWith("SNAPSHOT")) "main" else version
+            val remoteVersion = if ((version as String).endsWith(VersionComparatorUtil.VersionTokenType.SNAPSHOT.name)) "main" else version
 
             localDirectory.set(File(src))
 
