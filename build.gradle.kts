@@ -12,6 +12,8 @@ plugins {
 
     alias(libs.plugins.kotlin.jvm)
 
+    id("pl.allegro.tech.build.axion-release") version "1.14.4"
+
     alias(libs.plugins.shadow)
 
     jacoco
@@ -20,6 +22,14 @@ plugins {
 
     alias(libs.plugins.dokka)
 }
+
+scmVersion {
+    tag {
+        prefix = ""
+    }
+}
+
+version = scmVersion.version
 
 repositories {
     mavenCentral()
