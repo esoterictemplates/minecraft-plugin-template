@@ -68,7 +68,7 @@ kotlin
 
 <!-- Licenses -->
 
-[license]: ./LICENSE
+[license]: /LICENSE
 
 <!-- Badges -->
 

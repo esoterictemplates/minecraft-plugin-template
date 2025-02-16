@@ -32,7 +32,7 @@ The following serves as a checklist - a list of tasks to complete when creating 
 
 - [ ] Update all files in the [`template/`][template] directory with your own information.
 - [ ] If you are using a different system to track features, ideas, and/or issues, delete those files respectively and update files respectively.
-- [ ] Deleted the [`docs/`][docs] directory and move all files within the [`template`][template] directory to the root.
+- [ ] Delete the [`docs/`][docs] directory and move all files within the [`template`][template] directory to the root.
 - [ ] Commit your changes to version control if applicable.
 
 ## License
@@ -54,22 +54,10 @@ kotlin template templates template-project template-repository template-generic-
 
 <!-- Files -->
 
-[info]: ./README.md
-
-[contact]: ./CONTACT.md
-
 [license]: ../LICENSE
 
 [template]: ../template
 [docs]: ../docs
-
-[conduct]: ../template/docs/CODE_OF_CONDUCT.md
-
-[security]: ../template/docs/SECURITY.md
-
-<!-- IDE files -->
-
-[idea-name]: ../.idea/.name
 
 <!-- Links -->
 
