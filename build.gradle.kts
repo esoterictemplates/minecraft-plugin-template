@@ -49,7 +49,7 @@ java {
 }
 
 application {
-    mainClass = "${group}.template.MainKt"
+    mainClass = "${group}.${project.property("package")}.MainKt"
 }
 
 tasks {
