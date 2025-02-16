@@ -40,7 +40,7 @@ The following serves as a checklist - a list of tasks to complete when creating 
 
 ## Topics
 
-template templates template-project template-repository template-generic-repo
+kotlin template templates template-project template-repository template-generic-repo
 
 <!-- Link aliases -->
 
