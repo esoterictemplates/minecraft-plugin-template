@@ -61,7 +61,7 @@ jobs:
           mkdir -p ./docs/$version
 
           mv ./project/build/dokka/html/* ./docs/$version
-          rm -rf build
+          rm -rf ./project
 
           git add ./
           git commit -m "GitHub Pages updates"
