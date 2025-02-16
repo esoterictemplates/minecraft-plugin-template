@@ -96,17 +96,17 @@ dokka {
 
     dokkaSourceSets.main {
         sourceLink {
-            val src = property("kotlin") as String
+            val src = property("kotlin.directory") as String
             val resolvedVersion = if ((version as String).endsWith("SNAPSHOT")) "main" else version
 
             localDirectory.set(File(src))
 
-            remoteUrl("${property("source.prefix")}${resolvedVersion}/project/${src}")
+            remoteUrl("${property("source.url.prefix")}${resolvedVersion}/project/${src}")
         }
     }
 
     pluginsConfiguration.html {
-        homepageLink = property("homepage") as String
+        homepageLink = property("homepage.url") as String
 
         footerMessage.set("© ${Calendar.getInstance().get(Calendar.YEAR)} ${property("author")}")
     }
