@@ -1,12 +1,6 @@
 import java.util.Calendar
 import java.util.jar.Attributes
 
-buildscript {
-    dependencies {
-        classpath(libs.dokka)
-    }
-}
-
 plugins {
     application // Adds support for building a CLI application.
 
