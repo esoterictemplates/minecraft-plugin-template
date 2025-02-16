@@ -99,6 +99,6 @@ dokka {
     }
 
     pluginsConfiguration.html {
-        footerMessage.set("© ${Calendar.getInstance().get(Calendar.YEAR)} Esoteric Enderman")
+        footerMessage.set("© ${Calendar.getInstance().get(Calendar.YEAR)} ${property("author")}")
     }
 }
