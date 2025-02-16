@@ -40,7 +40,9 @@ jobs:
           rm -rf !(build|.git)
           shopt -u dotglob extglob
 
-          mv ./build/dokka/html/* ./
+          mkdir ./docs
+
+          mv ./build/dokka/html/* ./docs
           rm -rf build
 
           git add ./
