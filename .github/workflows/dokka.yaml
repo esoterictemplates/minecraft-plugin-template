@@ -45,7 +45,7 @@ jobs:
           git checkout --orphan gh-pages
 
           shopt -s dotglob extglob
-          rm -rf !(build|.git|.github/workflows/pages.yml)
+          rm -rf !(build|.git|.github/workflows/pages.yaml)
           shopt -u dotglob extglob
 
           mkdir -p ./docs/$version
