@@ -3,7 +3,6 @@
     <option name="ALTERNATIVE_JRE_PATH" value="jbr-21" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
     <option name="MAIN_CLASS_NAME" value="dev.enderman.template.MainKt" />
-    <module name="template.main" />
     <shortenClasspath name="NONE" />
     <option name="VM_PARAMETERS" value="-XX:+AllowEnhancedClassRedefinition -XX:HotswapAgent=core" />
     <method v="2">
