@@ -48,6 +48,8 @@ jobs:
           rm -rf !(build|.git|.github/workflows/pages.yaml)
           shopt -u dotglob extglob
 
+          ls -a
+
           mkdir -p ./docs/$version
 
           mv ./build/dokka/html/* ./docs/$version
