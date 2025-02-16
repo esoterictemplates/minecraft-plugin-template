@@ -53,6 +53,10 @@ application {
 }
 
 tasks {
+    withType<Jar> {
+        archiveBaseName = rootProject.name
+    }
+
     jar {
         manifest {
             attributes[Attributes.Name.MAIN_CLASS.toString()] = application.mainClass
