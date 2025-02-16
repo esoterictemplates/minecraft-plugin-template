@@ -77,6 +77,10 @@ tasks {
         dependsOn(shadowJar)
     }
 
+    test {
+        useJUnitPlatform()
+    }
+
     withType<AbstractRun> {
         javaLauncher = project.javaToolchains.launcherFor {
             vendor = JvmVendorSpec.JETBRAINS
@@ -84,10 +88,6 @@ tasks {
         }
 
         jvmArgs("-XX:+AllowEnhancedClassRedefinition")
-    }
-
-    test {
-        useJUnitPlatform()
     }
 
     withType<DokkaTask> {
