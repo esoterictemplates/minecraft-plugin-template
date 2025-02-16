@@ -1,6 +1,6 @@
 # Project Name
 
-<sup>Generated from [Template][template]</sup>
+<sup>Generated from [Kotlin Template][template]</sup>
 
 [![Project Status: Unfinished][status]][root] [![Repository Size][size]][root]
 
@@ -53,7 +53,7 @@ kotlin
 
 <!-- Template -->
 
-[template]: https://github.com/esoterictemplates/template
+[template]: https://github.com/esoterictemplates/kotlin-template
 
 <!-- Files -->
 
