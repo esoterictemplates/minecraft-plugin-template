@@ -38,6 +38,10 @@ jobs:
         run: |
           version=$(git describe --tags --abbrev=0)
 
+          if ! git describe --exact-match --tags HEAD >/dev/null 2>&1; then
+            version="${version}-SNAPSHOT"
+          fi
+
           git checkout --orphan gh-pages
 
           shopt -s dotglob extglob
