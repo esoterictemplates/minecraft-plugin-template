@@ -12,7 +12,7 @@ plugins {
 
     alias(libs.plugins.kotlin.jvm)
 
-    id("pl.allegro.tech.build.axion-release") version "1.14.4"
+    alias(libs.plugins.release.axion)
 
     alias(libs.plugins.shadow)
 
