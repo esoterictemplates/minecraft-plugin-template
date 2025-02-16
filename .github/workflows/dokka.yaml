@@ -54,6 +54,8 @@ jobs:
           cd ./project
 
           rm -rf !(build)
+
+          cd ../
           shopt -u dotglob extglob
 
           mkdir -p ./docs/$version
