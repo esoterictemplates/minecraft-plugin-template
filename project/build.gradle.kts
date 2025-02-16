@@ -96,12 +96,12 @@ dokka {
 
     dokkaSourceSets.main {
         sourceLink {
-            val src = property("source") as String
+            val src = property("kotlin") as String
             val resolvedVersion = if ((version as String).endsWith("SNAPSHOT")) "main" else version
 
             localDirectory.set(File(src))
 
-            remoteUrl("https://github.com/esoterictemplates/template-kotlin-repository/blob/${resolvedVersion}/project/${src}")
+            remoteUrl("${property("source.prefix")}${resolvedVersion}/project/${src}")
         }
     }
 
