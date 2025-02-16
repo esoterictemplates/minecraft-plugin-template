@@ -8,4 +8,4 @@
 
 [template]: https://github.com/esoterictemplates/kotlin-template
 [template-author]: https://enderman.dev
-[template-license]: ../../LICENSE
+[template-license]: ../LICENSE
