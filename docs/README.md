@@ -50,7 +50,7 @@ kotlin template templates template-project template-repository template-generic-
 <!-- Badges -->
 
 [status-badge]: ../template/docs/assets/images/badges/status/maintained.svg
-[repository-size-badge]: https://img.shields.io/github/repo-size/esoterictemplates/template?style=for-the-badge&logo=git&label=Repository%20size
+[repository-size-badge]: https://img.shields.io/github/repo-size/esoterictemplates/kotlin-template?style=for-the-badge&logo=git&label=Repository%20size
 
 <!-- Files -->
 
