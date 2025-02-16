@@ -23,14 +23,15 @@ This repository serves as a general-purpose template for generating new Kotlin p
 
 - Download the files of this repository, either via a zip archive, or using `git clone`.
 - If you used `git clone`, delete the `.git` folder.
-- If you are using version control (recommended), create the first revision after following the [checklist](#checklist).
+- Follow the [checklist](#checklist)
+- If you are using version control (recommended), create the first revision.
 
 ### Checklist
 
 The following serves as a checklist - a list of tasks to complete when creating a new project using this template.
 
 - [ ] Update all files in the [`template/`][template] directory with your own information.
-- [ ] If you are using a different system to track features, ideas, and/or issues, delete those files respectively and updated files respectively.
+- [ ] If you are using a different system to track features, ideas, and/or issues, delete those files respectively and update files respectively.
 - [ ] Deleted the [`docs/`][docs] directory and move all files within the [`template`][template] directory to the root.
 - [ ] Commit your changes to version control if applicable.
 
