@@ -59,6 +59,10 @@ tasks {
         }
     }
 
+    shadowJar {
+        minimize()
+    }
+
     test {
         useJUnitPlatform()
     }
