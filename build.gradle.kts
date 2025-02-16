@@ -102,7 +102,7 @@ dokka {
     }
 
     pluginsConfiguration.html {
-        homepageLink = "https://github.com/esoterictemplates/template-kotlin-repository"
+        homepageLink = property("homepage") as String
 
         footerMessage.set("© ${Calendar.getInstance().get(Calendar.YEAR)} ${property("author")}")
     }
