@@ -2,7 +2,11 @@ name: dokka
 
 on:
   push:
+    branches-ignore:
+      - gh-pages
   pull_request:
+    branches-ignore:
+      - gh-pages
 
 permissions:
   contents: write
@@ -44,13 +48,9 @@ jobs:
 
           git checkout --orphan gh-pages
 
-          ls -aR
-
           shopt -s dotglob extglob
-          rm -rf !(build|.git|.github/workflows/pages.yaml)
+          rm -rf !(build|.git|.github)
           shopt -u dotglob extglob
-
-          ls -a
 
           mkdir -p ./docs/$version
 
