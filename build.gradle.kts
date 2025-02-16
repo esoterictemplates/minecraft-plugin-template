@@ -25,6 +25,22 @@ plugins {
     alias(libs.plugins.dokka)
 }
 
+paperPluginYaml {
+    name = "Template"
+    description = project.description
+
+    authors = listOfNotNull("Esoteric Foundation", "Esoteric Enderman")
+
+    setVersion(project.version)
+
+    website = "https://github.com/esoterictemplate/template-minecraft-plugin"
+
+    apiVersion = project.property("minecraft.version") as String
+
+    main = "${project.group}.minecraft.plugins.template.TemplatePlugin"
+    bootstrapper = "${project.group}.minecraft.plugins.template.bootstrap.TemplatePluginBootstrap"
+}
+
 repositories {
     mavenCentral()
 
@@ -34,7 +50,7 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
 
-    paperweight.paperDevBundle("1.21.4-R0.1-SNAPSHOT")
+    paperweight.paperDevBundle("${paperPluginYaml.apiVersion.get()}-R0.1-SNAPSHOT")
 
     implementation(libs.utility)
 
@@ -43,22 +59,6 @@ dependencies {
     testImplementation(libs.junit.jetbrains)
 
     testImplementation(libs.bukkit.mock)
-}
-
-paperPluginYaml {
-  name = "Template"
-  description = project.description
-
-  authors = listOfNotNull("Esoteric Foundation", "Esoteric Enderman")
-
-  setVersion(project.version)
-
-  website = "https://github.com/esoterictemplate/template-minecraft-plugin"
-
-  apiVersion = "1.21.4"
-
-  main = "${project.group}.minecraft.plugins.template.TemplatePlugin"
-  bootstrapper = "${project.group}.minecraft.plugins.template.bootstrap.TemplatePluginBootstrap"
 }
 
 paperweight {
