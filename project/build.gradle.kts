@@ -1,5 +1,4 @@
 import org.jetbrains.kotlin.com.intellij.util.text.VersionComparatorUtil
-import org.jetbrains.kotlin.gradle.targets.js.binaryen.BinaryenRootPlugin.Companion.kotlinBinaryenExtension
 import java.util.Calendar
 import java.util.jar.Attributes
 
