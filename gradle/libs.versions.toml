@@ -34,9 +34,6 @@ junit-jetbrains = { module = "org.jetbrains.kotlin:kotlin-test-junit5" }
 
 bukkit-mock = { module = "org.mockbukkit.mockbukkit:mockbukkit-v1.21", version.ref = "bukkit-mock" }
 
-# Documentation
-dokka = { module = "org.jetbrains.dokka:dokka-base", version.ref = "dokka" }
-
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "plugin-kotlin-jvm" }
 
