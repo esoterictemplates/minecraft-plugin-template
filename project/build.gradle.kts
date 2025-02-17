@@ -100,7 +100,7 @@ tasks {
             languageVersion = JavaLanguageVersion.of(21)
         }
 
-        jvmArgs("-XX:+AllowEnhancedClassRedefinition")
+        jvmArgs("-XX:+AllowEnhancedClassRedefinition -XX:HotswapAgent=core")
     }
 
     jacocoTestCoverageVerification {
