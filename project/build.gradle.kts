@@ -33,7 +33,7 @@ paperPluginYaml {
     name = property("name.display") as String
     description = project.description
 
-    authors = listOfNotNull("Esoteric Enderman")
+    authors = listOfNotNull((property("authors") as String).split(",").joinToString(transform = String::trim))
 
     setVersion(project.version)
 
