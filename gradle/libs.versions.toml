@@ -7,6 +7,8 @@ utility = "1.1.1"
 junit-platform = "junit-platform-launcher"
 junit-jupiter-engine = "5.11.1"
 
+kotlin-mock = "1.13.16"
+
 bukkit-mock = "4.33.0"
 
 # Plugins
@@ -31,6 +33,8 @@ utility = { module = "com.github.esotericfoundation:utility.kt", version.ref = "
 junit-platform = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit-platform" }
 junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit-jupiter-engine" }
 junit-jetbrains = { module = "org.jetbrains.kotlin:kotlin-test-junit5" }
+
+kotlin-mock = { module = "io.mockk:mockk", version.ref = "kotlin-mock"}
 
 bukkit-mock = { module = "org.mockbukkit.mockbukkit:mockbukkit-v1.21", version.ref = "bukkit-mock" }
 

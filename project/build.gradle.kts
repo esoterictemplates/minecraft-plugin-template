@@ -61,6 +61,8 @@ dependencies {
     testImplementation(libs.junit.jupiter.engine)
     testImplementation(libs.junit.jetbrains)
 
+    testImplementation(libs.kotlin.mock)
+
     testImplementation(libs.bukkit.mock)
 }
 
