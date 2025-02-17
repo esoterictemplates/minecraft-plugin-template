@@ -30,7 +30,7 @@ scmVersion {
 version = "${scmVersion.version}-${project.property("minecraft.version")}"
 
 paperPluginYaml {
-    name = "Template"
+    name = property("name.display") as String
     description = project.description
 
     authors = listOfNotNull("Esoteric Enderman")
