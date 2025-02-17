@@ -103,13 +103,6 @@ tasks {
         jvmArgs("-XX:+AllowEnhancedClassRedefinition")
     }
 
-    withType<DokkaTask> {
-        pluginConfiguration<DokkaBase, DokkaBaseConfiguration> {
-            footerMessage = "© ${Calendar.getInstance().get(Calendar.YEAR)} Esoteric Enderman"
-            homepageLink = "https://github.com/esoterictemplates/template-minecraft-plugin"
-        }
-    }
-
     jacocoTestCoverageVerification {
         dependsOn(test)
 
