@@ -98,7 +98,7 @@ tasks {
     withType<AbstractRun> {
         javaLauncher = project.javaToolchains.launcherFor {
             vendor = JvmVendorSpec.JETBRAINS
-            languageVersion = JavaLanguageVersion.of(21)
+            languageVersion = JavaLanguageVersion.of((project.property("java.version") as String).toInt())
         }
 
         jvmArgs("-XX:+AllowEnhancedClassRedefinition -XX:HotswapAgent=core")
