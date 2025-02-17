@@ -39,10 +39,10 @@ paperPluginYaml {
 
     website = "https://github.com/esoterictemplate/template-minecraft-plugin"
 
-    apiVersion = project.property("minecraft.version") as String
+    apiVersion = property("minecraft.version") as String
 
-    main = "${project.group}.${project.property("package")}.TemplatePlugin"
-    bootstrapper = "${project.group}.${project.property("package")}.bootstrap.TemplatePluginBootstrap"
+    main = "${project.group}.${property("package")}.TemplatePlugin"
+    bootstrapper = "${project.group}.${property("package")}.bootstrap.TemplatePluginBootstrap"
 }
 
 repositories {
