@@ -113,6 +113,6 @@ dokka {
     pluginsConfiguration.html {
         homepageLink = property("homepage.url") as String
 
-        footerMessage.set("© ${Calendar.getInstance().get(Calendar.YEAR)} ${property("author")}")
+        footerMessage.set("© ${Calendar.getInstance().get(Calendar.YEAR)} ${property("authors")}")
     }
 }
