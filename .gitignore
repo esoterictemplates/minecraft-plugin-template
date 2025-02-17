@@ -49,6 +49,7 @@ ehthumbs_vista.db
 .~lock.*#
 
 # Archives
+# It's better to unpack these files and commit the raw source because Git has its own built-in compression methods.
 *.zip
 *.tar
 *.tar.gz
@@ -59,6 +60,24 @@ ehthumbs_vista.db
 *.war
 *.nar
 *.ear
+*.gzip
+*.bzip
+*.bzip2
+*.bz2
+*.xz
+*.lzma
+*.xar
+*.zst
+*.tzst
+
+## Package management formats
+*.dmg
+*.xpi
+*.gem
+*.egg
+*.deb
+*.rpm
+*.txz
 
 ## Minecraft archives
 
@@ -102,6 +121,7 @@ ehthumbs_vista.db
 *.bin
 *.exe
 *.apk
+*.app
 
 ## Common compiled files and/or binaries
 build
@@ -223,6 +243,10 @@ runs
 
 # Backup files
 backup
+
+## Non-Git version control
+.history
+.snapshots
 
 ## Recycled files
 .Trash-[0-9]*
