@@ -70,11 +70,11 @@ paperweight {
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of((property("java.version") as String).toInt())
-    }
+kotlin {
+    jvmToolchain((property("java.version") as String).toInt())
+}
 
+java {
     withSourcesJar()
 }
 
