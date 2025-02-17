@@ -27,7 +27,7 @@ scmVersion {
     }
 }
 
-version = scmVersion.version
+version = "${scmVersion.version}-${project.property("minecraft.version")}"
 
 paperPluginYaml {
     name = "Template"
