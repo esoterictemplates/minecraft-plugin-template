@@ -15,6 +15,8 @@ class TemplatePluginTest {
     @BeforeTest fun setUp() {
         server = MockBukkit.mock()
         plugin = MockBukkit.loadWith(TemplatePlugin::class.java, "paper-plugin.yml")
+
+        MockBukkit.ensureMocking()
     }
 
     @Test fun onEnableTest() {
