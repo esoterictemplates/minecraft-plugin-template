@@ -27,7 +27,7 @@ repository-artifact: https://
 identifiers:
   - type: url
     value: https://
-    description: 
+    description: The source code of this project.
 
 message: If you need to cite this project, please do it as specified in this file.
 
