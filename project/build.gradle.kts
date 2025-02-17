@@ -79,16 +79,16 @@ java {
 }
 
 tasks {
-    build {
-        dependsOn(shadowJar)
-    }
-
     withType<Jar> {
         archiveBaseName = rootProject.name
     }
 
     shadowJar {
         minimize()
+    }
+
+    build {
+        dependsOn(shadowJar)
     }
 
     test {
