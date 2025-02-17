@@ -3,8 +3,6 @@ import java.util.Calendar
 import java.util.jar.Attributes
 
 plugins {
-    `maven-publish`
-
     alias(libs.plugins.kotlin.jvm)
 
     alias(libs.plugins.release.axion)
