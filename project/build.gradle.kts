@@ -37,7 +37,7 @@ paperPluginYaml {
 
     setVersion(project.version)
 
-    website = "https://github.com/esoterictemplate/template-minecraft-plugin"
+    website = property("homepage.url") as String
 
     apiVersion = property("minecraft.version") as String
 
