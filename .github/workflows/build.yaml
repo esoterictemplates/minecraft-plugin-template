@@ -2,8 +2,11 @@ name: build
 
 on:
   push:
-    branches: [ "**" ]
+    branches-ignore:
+      - gh-pages
   pull_request:
+    branches-ignore:
+      - gh-pages
 
 jobs:
   build:
@@ -13,7 +16,8 @@ jobs:
         java: [ 21 ]
       fail-fast: true
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout project
+        uses: actions/checkout@v4
       - name: JDK ${{ matrix.java }}
         uses: actions/setup-java@v4
         with:

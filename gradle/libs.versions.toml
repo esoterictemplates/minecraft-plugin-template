@@ -9,9 +9,6 @@ junit-jupiter-engine = "5.11.1"
 
 bukkit-mock = "4.33.0"
 
-# Documentation
-dokka = "2.0.0"
-
 # Plugins
 plugin-kotlin-jvm = "2.1.0"
 
@@ -19,6 +16,8 @@ plugin-paperweight = "2.0.0-beta.14"
 
 plugin-paper-convention = "1.2.0"
 plugin-paper-run = "2.3.1"
+
+plugin-release-axion = "1.14.4"
 
 plugin-shadow = "9.0.0-beta8"
 
@@ -45,6 +44,8 @@ paperweight = { id = "io.papermc.paperweight.userdev", version.ref = "plugin-pap
 
 paper-convention = { id = "xyz.jpenilla.resource-factory-paper-convention", version.ref = "plugin-paper-convention" }
 paper-run = { id = "xyz.jpenilla.run-paper", version.ref = "plugin-paper-run" }
+
+release-axion = { id = "pl.allegro.tech.build.axion-release", version.ref = "plugin-release-axion" }
 
 shadow = { id = "com.gradleup.shadow", version.ref = "plugin-shadow" }
 

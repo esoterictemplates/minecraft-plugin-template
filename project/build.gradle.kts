@@ -1,19 +1,13 @@
-import xyz.jpenilla.runtask.task.AbstractRun
-import org.jetbrains.dokka.base.DokkaBase
-import org.jetbrains.dokka.base.DokkaBaseConfiguration
-import org.jetbrains.dokka.gradle.DokkaTask
+import org.jetbrains.kotlin.com.intellij.util.text.VersionComparatorUtil
 import java.util.Calendar
-
-buildscript {
-    dependencies {
-        classpath(libs.dokka)
-    }
-}
+import java.util.jar.Attributes
 
 plugins {
     `maven-publish`
 
     alias(libs.plugins.kotlin.jvm)
+
+    alias(libs.plugins.release.axion)
 
     alias(libs.plugins.paperweight)
 
@@ -22,8 +16,20 @@ plugins {
 
     alias(libs.plugins.shadow)
 
+    jacoco
+
+    `maven-publish`
+
     alias(libs.plugins.dokka)
 }
+
+scmVersion {
+    tag {
+        prefix = ""
+    }
+}
+
+version = scmVersion.version
 
 paperPluginYaml {
     name = "Template"
@@ -66,7 +72,7 @@ paperweight {
 // Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
+        languageVersion = JavaLanguageVersion.of((property("java.version") as String).toInt())
     }
 
     withSourcesJar()
@@ -75,6 +81,14 @@ java {
 tasks {
     build {
         dependsOn(shadowJar)
+    }
+
+    withType<Jar> {
+        archiveBaseName = rootProject.name
+    }
+
+    shadowJar {
+        minimize()
     }
 
     test {
@@ -96,6 +110,18 @@ tasks {
             homepageLink = "https://github.com/esoterictemplates/template-minecraft-plugin"
         }
     }
+
+    jacocoTestCoverageVerification {
+        dependsOn(test)
+
+        violationRules {
+            rule {
+                limit {
+                    minimum = 1.0.toBigDecimal()
+                }
+            }
+        }
+    }
 }
 
 publishing {
@@ -106,5 +132,24 @@ publishing {
             artifactId = rootProject.name
             version = version.toString()
         }
+    }
+}
+
+dokka {
+    moduleName = property("name.display") as String
+
+    dokkaSourceSets.main {
+        sourceLink {
+            val remoteVersion = if ((version as String).endsWith(VersionComparatorUtil.VersionTokenType.SNAPSHOT.name)) "main" else version
+
+            localDirectory.set(File(property("kotlin.directory") as String))
+            remoteUrl("${property("source.url.prefix")}${remoteVersion}/${localDirectory.get().asFile.relativeTo(rootProject.rootDir)}")
+        }
+    }
+
+    pluginsConfiguration.html {
+        homepageLink = property("homepage.url") as String
+
+        footerMessage.set("© ${Calendar.getInstance().get(Calendar.YEAR)} ${property("author")}")
     }
 }
