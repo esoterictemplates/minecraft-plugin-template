@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.com.intellij.util.text.VersionComparatorUtil
+import xyz.jpenilla.runtask.task.AbstractRun
 import java.util.Calendar
 import java.util.jar.Attributes
 
