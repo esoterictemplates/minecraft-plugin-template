@@ -18,7 +18,7 @@ class TemplatePluginBootstrapTest {
         plugin = MockBukkit.loadWith(TemplatePlugin::class.java, "paper-plugin.yml")
     }
 
-    @Test fun onEnableTest() {
+    @Test fun bootstrapTest() {
         assertNotNull(server)
         assertNotNull(plugin)
     }
