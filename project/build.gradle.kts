@@ -52,7 +52,7 @@ repositories {
 }
 
 dependencies {
-    paperweight.paperDevBundle("${paperPluginYaml.apiVersion.get()}-R0.1-SNAPSHOT")
+    paperweight.paperDevBundle("${paperPluginYaml.apiVersion.get()}-R0.1-${VersionComparatorUtil.VersionTokenType.SNAPSHOT.name}")
 
     implementation(libs.utility)
 
