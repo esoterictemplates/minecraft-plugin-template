@@ -33,7 +33,7 @@ Project description.
 
 ## License
 
-[Repository Name][root] &copy; \<year> [\<name of author>][author-website] is licensed under the [AGPL 3.0][license].
+[Repository Name][root] &copy; \<year> [\<name of author>][author-website] is licensed under the [AGPL 3.0][license] only.
 
 ## Topics
 
