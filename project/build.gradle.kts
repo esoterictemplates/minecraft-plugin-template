@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.com.intellij.util.text.VersionComparatorUtil
+import org.jetbrains.kotlin.gradle.targets.js.binaryen.BinaryenRootPlugin.Companion.kotlinBinaryenExtension
 import java.util.Calendar
 import java.util.jar.Attributes
 
@@ -38,6 +39,8 @@ dependencies {
     testRuntimeOnly(libs.junit.platform)
     testImplementation(libs.junit.jupiter.engine)
     testImplementation(libs.junit.jetbrains)
+
+    testImplementation(libs.kotlin.mock)
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
