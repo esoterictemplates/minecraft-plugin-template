@@ -33,7 +33,7 @@ paperPluginYaml {
     name = "Template"
     description = project.description
 
-    authors = listOfNotNull("Esoteric Foundation", "Esoteric Enderman")
+    authors = listOfNotNull("Esoteric Enderman")
 
     setVersion(project.version)
 
