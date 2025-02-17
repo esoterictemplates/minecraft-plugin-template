@@ -1,11 +1,8 @@
 package dev.enderman.minecraft.plugins.template.bootstrap
 
 import dev.enderman.minecraft.plugins.template.TemplatePlugin
-import io.papermc.paper.plugin.bootstrap.BootstrapContext
-import org.bukkit.plugin.PluginDescriptionFile
 import org.mockbukkit.mockbukkit.MockBukkit
 import org.mockbukkit.mockbukkit.ServerMock
-import org.mockbukkit.mockbukkit.plugin.MockBukkitPluginLoader
 import kotlin.test.AfterTest
 import kotlin.test.BeforeTest
 import kotlin.test.Test
