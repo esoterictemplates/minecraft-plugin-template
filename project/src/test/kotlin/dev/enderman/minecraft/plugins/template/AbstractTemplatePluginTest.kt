@@ -1,5 +1,6 @@
 package dev.enderman.minecraft.plugins.template
 
+import org.junit.jupiter.api.assertDoesNotThrow
 import org.mockbukkit.mockbukkit.MockBukkit
 import org.mockbukkit.mockbukkit.ServerMock
 import kotlin.test.*
@@ -14,7 +15,9 @@ abstract class AbstractTemplatePluginTest {
     }
 
     @Test fun `server mocked correctly`() {
-        MockBukkit.ensureMocking()
+        assertDoesNotThrow("Server should be mocked correctly.") {
+            MockBukkit.ensureMocking()
+        }
     }
 
     @Test fun `server exists`() {

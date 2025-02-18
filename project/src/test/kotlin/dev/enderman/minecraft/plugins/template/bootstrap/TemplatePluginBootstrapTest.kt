@@ -3,6 +3,7 @@ package dev.enderman.minecraft.plugins.template.bootstrap
 import dev.enderman.minecraft.plugins.template.AbstractTemplatePluginTest
 import io.mockk.mockk
 import io.papermc.paper.plugin.bootstrap.BootstrapContext
+import org.junit.jupiter.api.assertDoesNotThrow
 import org.mockbukkit.mockbukkit.MockBukkit
 import kotlin.test.BeforeTest
 import kotlin.test.Test
@@ -20,8 +21,10 @@ class TemplatePluginBootstrapTest : AbstractTemplatePluginTest() {
     }
 
     @Test fun `bootstrap method works`() {
-        val contextMock = mockk<BootstrapContext>()
+        assertDoesNotThrow("Plugin bootstrap method should work.") {
+            val contextMock = mockk<BootstrapContext>()
 
-        pluginBootstrap.bootstrap(contextMock)
+            pluginBootstrap.bootstrap(contextMock)
+        }
     }
 }
