@@ -16,7 +16,7 @@ class TemplatePluginBootstrapTest : AbstractTemplatePluginTest() {
     }
 
     @Test fun `plugin bootstrap exists`() {
-        assertNotNull(pluginBootstrap)
+        assertNotNull(pluginBootstrap, "Plugin bootstrap should not be null.")
     }
 
     @Test fun `bootstrap method works`() {
