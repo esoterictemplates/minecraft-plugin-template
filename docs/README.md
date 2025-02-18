@@ -41,7 +41,7 @@ The following serves as a checklist - a list of tasks to complete when creating 
 
 ## Topics
 
-kotlin plugin template minecraft templates minecraft-plugin template-project minecraft-plugins template-repository minecraft-plugin-development minecraft-paper template-generic-repo minecraft-paper-plugin minecraft-paper-plugins minecraft-papermc-plugin minecraft-papermc-plugins minecraft-papermc
+kotlin plugin template minecraft paper templates minecraft-plugin mc template-project paper-plugin mc-dev minecraft-plugins mc-development mc-kotlin papermc template-repository minecraft-plugin-development papermc-plugin papermc-plugins papermc-plugin-template
 
 <!-- Link aliases -->
 
