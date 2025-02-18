@@ -1,4 +1,7 @@
 [versions]
+# Minecraft
+minecraft = "1.21.4"
+
 # Libraries
 # Utility
 utility = "1.1.1"

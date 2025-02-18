@@ -39,7 +39,7 @@ paperPluginYaml {
 
     website = property("homepage.url") as String
 
-    apiVersion = property("minecraft.version") as String
+    apiVersion = libs.versions.minecraft.get()
 
     main = "${project.group}.${property("package")}.${name.get()}Plugin"
     bootstrapper = "${project.group}.${property("package")}.bootstrap.${name.get()}PluginBootstrap"
