@@ -2,10 +2,7 @@ package dev.enderman.minecraft.plugins.template
 
 import org.mockbukkit.mockbukkit.MockBukkit
 import org.mockbukkit.mockbukkit.ServerMock
-import kotlin.test.AfterTest
-import kotlin.test.BeforeTest
-import kotlin.test.Test
-import kotlin.test.assertNotNull
+import kotlin.test.*
 
 abstract class AbstractTemplatePluginTest {
     protected lateinit var server: ServerMock
@@ -20,12 +17,16 @@ abstract class AbstractTemplatePluginTest {
         MockBukkit.ensureMocking()
     }
 
-    @Test fun `server should start without errors`() {
+    @Test fun `server should exist`() {
         assertNotNull(server)
     }
 
-    @Test fun `plugin should enable without errors`() {
+    @Test fun `plugin should exist`() {
         assertNotNull(plugin)
+    }
+
+    @Test fun `plugin should be enabled`() {
+        assertTrue(plugin.isEnabled)
     }
 
     @AfterTest fun tearDown() {
