@@ -4,7 +4,6 @@ import dev.enderman.minecraft.plugins.template.AbstractTemplatePluginTest
 import io.mockk.mockk
 import io.papermc.paper.plugin.bootstrap.BootstrapContext
 import org.junit.jupiter.api.assertDoesNotThrow
-import org.mockbukkit.mockbukkit.MockBukkit
 import kotlin.test.BeforeTest
 import kotlin.test.Test
 import kotlin.test.assertNotNull
