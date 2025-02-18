@@ -15,11 +15,11 @@ class TemplatePluginBootstrapTest : AbstractTemplatePluginTest() {
         pluginBootstrap = TemplatePluginBootstrap()
     }
 
-    @Test fun `plugin bootstrap should exist`() {
+    @Test fun `plugin bootstrap exists`() {
         assertNotNull(pluginBootstrap)
     }
 
-    @Test fun `bootstrap method should work`() {
+    @Test fun `bootstrap method works`() {
         val contextMock = mockk<BootstrapContext>()
 
         pluginBootstrap.bootstrap(contextMock)
