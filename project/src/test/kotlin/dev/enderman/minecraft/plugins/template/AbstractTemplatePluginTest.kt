@@ -18,15 +18,15 @@ abstract class AbstractTemplatePluginTest {
     }
 
     @Test fun `server should exist`() {
-        assertNotNull(server)
+        assertNotNull(server, "Server should not be null.")
     }
 
     @Test fun `plugin should exist`() {
-        assertNotNull(plugin)
+        assertNotNull(plugin, "Plugin should not be null.")
     }
 
     @Test fun `plugin should be enabled`() {
-        assertTrue(plugin.isEnabled)
+        assertTrue(plugin.isEnabled, "Plugin should be enabled.")
     }
 
     @AfterTest fun tearDown() {
