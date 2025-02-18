@@ -13,19 +13,19 @@ abstract class AbstractTemplatePluginTest {
         plugin = MockBukkit.loadWith(TemplatePlugin::class.java, "paper-plugin.yml")
     }
 
-    @Test fun `server should be mocked correctly`() {
+    @Test fun `server mocked correctly`() {
         MockBukkit.ensureMocking()
     }
 
-    @Test fun `server should exist`() {
+    @Test fun `server exists`() {
         assertNotNull(server, "Server should not be null.")
     }
 
-    @Test fun `plugin should exist`() {
+    @Test fun `plugin exists`() {
         assertNotNull(plugin, "Plugin should not be null.")
     }
 
-    @Test fun `plugin should be enabled`() {
+    @Test fun `plugin enabled`() {
         assertTrue(plugin.isEnabled, "Plugin should be enabled.")
     }
 
