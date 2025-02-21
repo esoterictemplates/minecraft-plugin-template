@@ -95,15 +95,6 @@ tasks {
         useJUnitPlatform()
     }
 
-    withType<AbstractRun> {
-        javaLauncher = project.javaToolchains.launcherFor {
-            vendor = JvmVendorSpec.JETBRAINS
-            languageVersion = JavaLanguageVersion.of((project.property("java.version") as String).toInt())
-        }
-
-        jvmArgs("-XX:+AllowEnhancedClassRedefinition -XX:HotswapAgent=core")
-    }
-
     jacocoTestCoverageVerification {
         dependsOn(test)
 
@@ -114,6 +105,15 @@ tasks {
                 }
             }
         }
+    }
+
+    withType<AbstractRun> {
+        javaLauncher = project.javaToolchains.launcherFor {
+            vendor = JvmVendorSpec.JETBRAINS
+            languageVersion = JavaLanguageVersion.of((project.property("java.version") as String).toInt())
+        }
+
+        jvmArgs("-XX:+AllowEnhancedClassRedefinition -XX:HotswapAgent=core")
     }
 }
 
