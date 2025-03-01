@@ -1,4 +1,6 @@
 import org.jetbrains.kotlin.com.intellij.util.text.VersionComparatorUtil
+import xyz.jpenilla.resourcefactory.bukkit.BukkitPluginYaml
+import xyz.jpenilla.resourcefactory.bukkit.bukkitPluginYaml
 import xyz.jpenilla.runtask.task.AbstractRun
 import java.util.Calendar
 
@@ -43,6 +45,10 @@ paperPluginYaml {
 
     main = "${project.group}.${property("package")}.${name.get()}Plugin"
     bootstrapper = "${project.group}.${property("package")}.bootstrap.${name.get()}PluginBootstrap"
+}
+
+bukkitPluginYaml {
+    load = BukkitPluginYaml.PluginLoadOrder.STARTUP
 }
 
 repositories {
