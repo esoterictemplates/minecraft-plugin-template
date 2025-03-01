@@ -17,6 +17,6 @@ open class TemplatePlugin : JavaPlugin() {
     }
 
     override fun onDisable() {
-        logger.info("Disabled plugin...")
+        logger.info("Disabled plugin")
     }
 }
